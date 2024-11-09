@@ -1,0 +1,302 @@
+
+### Questions 
+
+## Big O
+
+![time complexity](image.png)
+
+## Hash Tables
+
+[Links](https://www.metacareers.com/profile/preparation_hub?c=559389189759409&chooseView=Hash+Tables)
+
+### Tips and Tricks
+- Listen for:
+  - Lookups, counting how many times.
+- Patterns & Concepts:
+  - Implementation. How do we handle collision? 
+  - Hash codes. What are they  and how do we use them?
+  - Keys. What should my key be?
+- Syntactical Details:
+    - Creation, access, check contains, delete
+- Stumbling Block
+    - Key isn't in hash table
+- Extras
+    - Hash table or hash set?
+    - Character frequency table.
+    - BitMap (0/1 -> true/false)
+
+### Questions
+
+1. Megan is implementing a hash table from scratch. She has chosen to handle collisions through chaining: if two items collide at the same index in the underlying array, they are put into a linked list. If her hash table maps from strings to Person objects, which would be most appropriate data type for the linked list?
+
+- A linked list of Person objects
+- -> A linked list of (string, Person) objects
+-  A linked list of strings
+
+## Search
+
+[Link](https://www.metacareers.com/profile/preparation_hub?c=559389189759409&chooseView=Search)
+
+You know what binary search is.
+
+### Tips and Tricks
+- Listen for:
+    - Sorted data
+    - Guesses can be over / under estimated
+- Syntactical Details:
+    - Implementing binary search  from scratch and & with library
+- Patterns & Concepts:
+    - Modification of binary search
+- Stumbling Blocks:
+    - Left, right, middle indices
+    - Middle computation
+    - Flooring? (len(x)//2 in python)
+- Extras
+    - Practice
+
+### Questions
+1. While engineers often think about binary search recursively, the algorithm is often implemented iteratively. Why?
+
+    - It reduces the time complexity significantly.
+    - None of the above.
+    - --> It reduces the space complexity significantly.
+    - The iterative implementation is much simpler.
+
+2. In which of the following scenarios might the runtime of binary search degenerate?
+
+    - The array is a consecutive sequence of numbers.
+    - The array has many duplicates.
+    - The array has a large span across the values, for example, ranging from -1000000000 to 1000000000
+    - --> None of the above.
+
+## Sorting
+
+
+
+
+[Link](https://www.metacareers.com/profile/preparation_hub?c=559389189759409&chooseView=Sorting)
+
+### Tips and Tricks
+
+### Questions
+
+1. You’re working in a mysterious programming language and you notice that array.sort is usually pretty fast, even with a large dataset. (That is, it seems comparable to sorts running with O(N log N) time complexity.) However, when applied to an array that’s already sorted, this array.sort becomes much slower. Which of the following sorting algorithms is most likely to be underlying array.sort?
+
+    - Selection Sort
+    Why Not Suitable: Selection sort has a time complexity of O(N^2) in all cases (best, average, and worst). It does not exhibit the behavior of being fast on average but slow on already sorted arrays. It is consistently slow for large datasets.
+    - Quicksort
+    Why Suitable: Quicksort has an average-case time complexity of O(N log N), which makes it fast for most datasets. However, its worst-case time complexity is O(N^2), which occurs when the pivot selection is poor, such as when the array is already sorted or nearly sorted. This matches the described behavior of array.sort.
+    - Mergesort
+    Why Not Suitable: Mergesort has a time complexity of O(N log N) in all cases (best, average, and worst). It is consistently efficient and does not become significantly slower for already sorted arrays. Therefore, it does not match the described behavior.
+    - Bubble Sort
+    Why Not Suitable: Bubble sort has a worst-case and average-case time complexity of O(N^2). However, its best-case time complexity is O(N) when the array is already sorted. This means it would actually be faster, not slower, for already sorted arrays, which does not match the described behavior.
+
+
+2. Your friend is concerned about using quicksort in your code, stating that the runtime will degenerate if the array is already sorted. Which might be the best fix for this issue?
+
+    Randomized Pivot: Randomly select a pivot element to reduce the likelihood of encountering the worst-case scenario.
+
+    Improves Average Performance: Randomized pivot selection ensures that, on average, the partitions are more balanced, leading to an average-case time complexity of O(N log N).
+
+
+3. You have an array of length N representing humans, and you want to sort the people by their age (integers between 0 and 150). What is the best runtime for this problem?
+
+    Using counting sort. 
+    Which is very efficient for O(n).
+
+    The range of ages (0 to 150) is small and fixe
+
+    It is a non-comparative sorting algorithm, making it faster than comparison-based algorithms for this specific case.
+
+    The best runtime for sorting the array of humans by their age using counting sort is O(N + k), which in this case simplifies to O(N) since k (the range of ages) is a constant (151).
+
+
+## Recursion
+
+[Link](https://www.metacareers.com/profile/preparation_hub?c=559389189759409&chooseView=Recursion)
+
+
+### Tips and Tricks
+  - Listen for: 
+    - Choices: Do I go left or right?
+    - Superlatives: Biggest, longest, shortest, all 
+    - Divide and conquer: Can you solve for parts seperately?
+    
+
+  - Patterns & concepts: 
+    - Tip: Tell  your interviewer if you think it is recursive.
+    - All recursive can be iteratively!
+    - Space complexity! Stack!
+    - Trust and merge
+    - Damage and repair. E.g. visited
+
+  - Stumbling Blocks
+    - Null empty, 1 or 2 elements, ...
+    - Base cases: Keep them simple as possible
+
+  - Extras
+    - Practice!
+
+### Questions 
+
+  - Fibonacci: Time: O(2^N) (tree structure: #branches^(depth)), Space: O(n) coz of the stack
+  - Factorial:Time and Space: O(n) because of stack
+
+1. You are asked to change an algorithm, usually implemented recursively, into an iterative algorithm. What of the following data structures would you be most likely to use?
+
+Stack
+
+
+2. You have implemented some recursive algorithm on a balanced binary search tree, which, in part, requires recursing on the left and then recursing on the right (similar to an in-order traversal). If there are N nodes in the tree, which of the following is true about your space complexity?
+
+It is at least O(log N), but could be worse.
+
+
+3. In which of the following scenarios would you be most likely to use recursion?
+
+    - Computing all permutations of a string
+
+        Most Likely to Use Recursion: Generating all permutations of a string is a classic problem that is naturally suited to recursion. Each recursive call can fix one character and recursively generate permutations of the remaining characters.
+
+    - Finding all instances of the substring p within the string s
+
+        Not Likely to Use Recursion: This problem is typically solved using iterative methods or string matching algorithms like the Knuth-Morris-Pratt (KMP) algorithm or the Boyer-Moore algorithm, rather than recursion.
+
+    - Generating all possible binary numbers from the integers from 1 to N
+
+        Not Likely to Use Recursion: This problem can be efficiently solved using iterative methods or bit manipulation techniques. Recursion is not typically used for generating binary numbers in this context.
+
+    - Breadth-first search of a graph to determine the shortest path from A to B
+
+        Not Likely to Use Recursion: Breadth-first search (BFS) is typically implemented using a queue and iterative methods. Recursion is more commonly associated with depth-first search (DFS).
+
+
+## Stacks
+
+[Link](https://www.metacareers.com/profile/preparation_hub?c=559389189759409&chooseView=Stacks)
+
+### Tips and Tricks
+  - Listen for:
+    - LIFO: Last in, First out.
+    - Reversing steps. Going backwards.
+  - Syntactical details:
+    - Using a stack: pop, push, peek
+
+  - Patterns & Concepts
+    - Augment stack class: minimum element
+    - Class vs. data: Do I get acces to the Node, or just the Stack class?
+
+  - Stumbling Blocks:
+    - Empty Stacks
+
+  - Extras
+    - Great practice question: Implement a queue class using a stack class? Tip: You can use up to two stacks to mimic a queue.
+
+### Questions
+
+1. Which of the following statements are true about stacks?
+
+    They operate according to the LIFO (last-in-first-out) principle
+
+2. Imagine you have a stack S, with 10 elements. You clone S to create stack T. Then, you call T.pop() 10 times, pushing the result onto a stack U. Which of the following statements is true?
+
+ - Initial State:
+    - Stack S: [a, b, c, d, e, f, g, h, i, j] (top to bottom)
+    - Stack T: [a, b, c, d, e, f, g, h, i, j] (top to bottom, same as S)
+  - After Popping from T and Pushing to U:
+    Stack T (after 1st pop): [b, c, d, e, f, g, h, i, j]
+    - Stack U (after 1st push): [a]
+    - Continue this process until T is empty and U has all elements.
+  - After 10 pops and pushes:
+    - Stack T: []
+    - Stack U: [j, i, h, g, f, e, d, c, b, a] (top to bottom)
+
+## Queue
+
+[Link](https://www.metacareers.com/profile/preparation_hub?c=559389189759409&chooseView=Queues)
+
+
+### Tips and Tricks
+- Listen For:
+    - FIFO: first in, first out.
+    Process items in the order they appear.
+- Syntactical Details
+    - Built-in queue data structure.
+- Patterns & Concepts
+    - Using linked list as a queue.
+- Stumbling Blocks
+    - Empty list
+    - Single Element list
+    - Updating head and tail
+- Extras:
+    - When to use queue, linked list, stacks etc. 
+    - Implement queue from scratch
+
+### Questions
+
+1. A queue is an abstract data type, which means that the requirements are specified but not the implementation. Your friend argues that it might be easy to implement a queue with a dynamically resizable array—just use a “newest” and “oldest” pointer in the array. When a new element is enqueued, move the newest pointer. When you remove an element, move the oldest pointer. Which issue below might you run into with this implementation?
+
+    - It will make it more difficult to find the largest value.
+    - This implementation can only support integer values.
+    - -> If many elements are added and then removed, the array could waste a lot of space.
+    - Inserting an element will be O(N) time on average, since you have to resize the array to fit more elements.
+
+2. In which of the following circumstances would we be most likely to use a queue?
+
+    - When switching a recursive algorithm into an iterative approach
+    - Implementing depth-first search
+    - -> Implementing breadth-first search
+    - A typical recursive algorithm
+
+
+3. I walk through the integers 1 through N in order. If the value is odd, I enqueue onto queue Q. If the value is even, I dequeue from Q and toss away the value. After walking through the numbers 1 through N, what will Q look like?
+Label
+
+    - This program will throw an exception.
+    - Q = []
+    - Q = [N]
+    - -> Q could be either [N] or []
+
+## Trees
+
+[Link](https://www.metacareers.com/profile/preparation_hub?c=559389189759409&chooseView=Trees)
+
+### Tree
+- Tree
+- Binary Tree
+- Binary Search Tree
+
+#### Traversal
+- in-order: go(left), visit(me), go(right) --> if BST visits the nodes in order 
+- pre-order: visit(me), go(left), go(right) --> visits the nodes before recursion
+- post_order: go(left), go(right), visit(me) --> visits the nodes after recursion
+
+### Trie 
+- E.g. Sudoku - Word Search Problem
+    - Clue: Is it a prefix?
+
+
+### Tips and Tricks
+
+- Listen For:
+    - Hierarchal data
+- Syntactial details
+    - Creation, find, insert, and runtime
+- Patterns & Concepts
+    - Balanced vs unbalanced
+    - Augment tree, e.g. track the size of every  subtree. What is runtime?
+    - Checking subtree for a property.
+- Stumbling Blocks
+    - Null pointer exception. `if not node: return 0`
+    - Duplicates
+    - Unbalanced tree
+    - Return values for find
+    - Binary vs binary search tree
+- Extras:
+    - Trie (Strings)
+    - Recursion. Practice. 
+
+
+## Notes
+
+Recursing on the left and then recursing on the right (similar to an in-order traversal)
