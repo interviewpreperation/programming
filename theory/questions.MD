@@ -33,7 +33,19 @@ Others:
 4. Optimize before write code.
 5. Walk through algo. Before start to code. Nail down the details!
 6. Code.
-7. Verification.
+7. Verification. Last improvements: style, maintainabity. Like a code review.
+
+
+### Optimizing with BUD
+
+BUD: Bottlenecks - Unnecessary Work - Duplicated Work 
+
+- Bottlenecks: 
+- Unnecessary Work: 
+- Duplicated Work: 
+
+
+### Problem Solving - Optimizing with Space and Time
 
 ## Hash Tables
 
