@@ -122,12 +122,18 @@ BUD: Bottlenecks - Unnecessary Work - Duplicated Work
 
 [Link](https://www.metacareers.com/profile/preparation_hub?c=559389189759409&chooseView=Communication) 
 
-
-- Drive through the problem
-- Show your thought process
-- Ask questions
-- Propose initial solution, but also think about its issues
-
+- Drive through the problem.
+- Show your thought process.
+- Ask questions.
+- Propose initial solution, but also think about its issues.
+- Talk while coding, if possible. Explain what you're doing.
+- Use examples to explain your approach.
+- Be open about mistakes.
+- Admit if you have heard the question before.
+- Keep trying.
+- Listen to your interviewer.
+- Make sure you capture the value of their hints.
+- Follow your interviewer's path.
 
 ## Hash Tables
 
