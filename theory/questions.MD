@@ -1,9 +1,39 @@
 
-### Questions 
+# Questions 
 
 ## Big O
 
+[Link](https://www.metacareers.com/profile/preparation_hub?c=559389189759409&chooseView=Big+O)
+
 ![time complexity](image.png)
+
+### Tips and Tricks
+
+- Include all things.
+- Use logical variable name.
+- Define the variables you need.
+- Add runtimes when one step is done, then another step.
+- Adding vs. multiplying. (O(a+a+d) = O(2a+d) = O(a+b)).
+- Drop constants.
+- Use big O for space. Remember the call stack!
+- Drop non-dominant terms.
+
+Others:
+- Keep in mind big O as you solve problems
+- Generally looking for the best time and space complexity
+- A lower big O doesn't mean always faster. It means faster when the is sufficiently large. It is about SCALE!
+
+## Problem Solving
+
+### The Seven Steps
+
+1. Listen... for clues. 
+2. Draw an example. Input and output. Large and generic examples. (Your brain must work for it.)
+3. Brute force. (When struggling, what is a stupid way doing this. Then find time and space complexity and hold back.) 
+4. Optimize before write code.
+5. Walk through algo. Before start to code. Nail down the details!
+6. Code.
+7. Verification.
 
 ## Hash Tables
 
@@ -415,12 +445,24 @@ Label
 
 ## Greedy Algorithms
 
+[Link](https://www.metacareers.com/profile/preparation_hub?c=559389189759409&chooseView=Greedy%20Algorithms)
+
+  - Dynamic programming: Try each option. See what happen LATER. Pick best option.
+  - Greedy: Don't worry about the future. Take the best decision right now.
+
+
+## Tips and Tricks
+
+- Not everything can be solved with greedy algorithm.
+
+
+
 ### Questions
 
 1. Consider the following problem: Given a number of cents C and an array of denominations D, produce this change using the fewest number of coins possible. For example, if the denominations are US currency (25, 10, 5, 1), you could make 56 cents with 2 quarters (25 cents), 1 nickel (5 cents) and 1 penny (1 cent). Jennifer proposes a greedy approach where you apply the biggest denomination first, then the second biggest, and so on. Will the greedy approach work?
 
    - It will not work for any value of D.
-   - It will work for some values of D but not others.
+   - -> It will work for some values of D but not others.
    - Yes, for all values of D
 
 ## Notes
