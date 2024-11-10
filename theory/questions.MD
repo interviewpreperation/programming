@@ -25,6 +25,8 @@ Others:
 
 ## Problem Solving
 
+
+
 ### The Seven Steps
 
 1. Listen... for clues. 
@@ -38,14 +40,56 @@ Others:
 
 ### Optimizing with BUD
 
+
 BUD: Bottlenecks - Unnecessary Work - Duplicated Work 
 
-- Bottlenecks: 
-- Unnecessary Work: 
-- Duplicated Work: 
+- Bottlenecks.
+- Unnecessary Work.
+- Duplicated Work.
 
+### Optimize with Space and Time
 
-### Problem Solving - Optimizing with Space and Time
+- There are trade-offs. We can sacrifice time for space. 
+    - Hash tables
+    - Pre-computation
+    - Tries
+- Best conceivable runtime: What runtime I cannot beat?
+
+### Optimize with DIY
+
+- Come up with a good example (large & generic, no special cases), then figure out the output.
+- Pay attention short circuiting or tricks you use. 
+
+## Coding
+
+[Link](https://www.metacareers.com/profile/preparation_hub?c=559389189759409&chooseView=Coding)
+
+### Coding expectations
+
+- Do not rush into the code.
+- Start, when you are ready and the interview is ready.
+
+### Tips and Tricks
+
+- Don't just dive in. Make sure you know the little details. Wait until you and your interviewer are ready. 
+- Algorithm details, data structure, indices, etc.
+- Demonstrate that you are a great coder:
+    - correctness
+    - readability
+    - maintainability
+    - performance
+- Use the neat features of your programming language. 
+    - Ask if you are not sure
+    - Can often "make up" reasonable functions (or assume at first and implement later)
+    - Use good style (consistent spaces etc.)
+    - Think about error cases, boundary checks, etc.
+
+### Coding - Structured Code
+
+- Structuring your code makes it more readable, maintainable, etc. AND makes life easier
+- Modularize code top down, filling in the next most interesting piece of code
+- Ignore things that don't show good signal (but check with your interviewer first)
+- Focus on what shows signal
 
 ## Hash Tables
 
