@@ -297,6 +297,132 @@ Label
     - Recursion. Practice. 
 
 
+### Questions
+
+1. You walk through a sorted array of length N, inserting each element into a binary search tree which is initially empty. The tree is not self-balancing. How many levels are in the final tree?
+Label
+
+- -> N
+- N / 2
+- log(N)
+- 1
+
+2. You have an array of 17 elements, and you insert each node into a binary tree. What is the fewest number of levels in the resulting tree?
+Label
+
+- 4
+- 17
+- -> 5: 2^N --> 2^5 (2^4 is too small with 16 elements)
+- 6
+
+## Priority Queues and Heaps
+
+[Link](https://www.metacareers.com/profile/preparation_hub?c=559389189759409&chooseView=Heaps)
+
+### Tips and Tricks
+- Storing an heap in an array.
+- Implement node class and as heap class. take code and modify in this array. Heap to Array approach. 
+
+
+### Questions
+
+1. Jim points out (correctly) that one could use a min-heap to sort an array. You could convert the array into a min-heap, and then pull out the min value repeatedly in order to get the items in sorted order. Let N be the length of the array. What would the time complexity of this approach be?
+
+    - O(N + N log N)
+    - -> O(N log N)
+    - O(N^2)
+    - O(N (log N)^2)
+
+    Explaination: Building a min-heap from an unsorted array takes O(N) time. This is because the heapify operation, when applied in a bottom-up manner, has a linear time complexity. Extracting the minimum element from a min-heap and re-heapifying the remaining elements takes O(log N) time.
+    Since we need to extract N elements, this step will take O(N log N) time.
+
+2. You have an array A, and you build a min-heap P and a max-heap Q from it (implementing each heap in an associated array). If you called equals on the arrays associated with P and Q (comparing the arrays for equality, element by element), what would the result be?
+
+    - -> equals(P, Q) could be true or false
+    - equals(P, Q) would always be true
+    - equals(P, Q) would always be false
+
+    Only in rare cases, it is true. Such as [1,1,1,1,1].
+
+## Graphs 
+
+[Link](https://www.metacareers.com/profile/preparation_hub?c=559389189759409&chooseView=Graphs) 
+
+### Terminology
+
+- directed
+- undirected
+- adjacency list: class vertices and class graph
+- adjacency matrix: many more #edges >>> #nodes. Not good if sparse: Needs $\mathcal{O}(V^2)$ space.
+- cycle
+- acyclic
+- weighted edges: (distance from city A to city B)
+
+### Depth First Search (DFS)
+
+- Go deep, before you can go wide. 
+- Watch out for cycles. Set or Hashmap for visited nodes.
+
+### Breadth First Search (BFS)
+
+- Is there a path?
+- What is the shortest path?
+- Visited. Hashset.
+- Find path $\mathcal{O}(E)$.
+- Searching entire graph: $\mathcal{O}(V+E)$.
+- Bidirectional BFS: Start from source and destination. 
+    - Faster. 
+    - Assume each person has d friends, then after paths of length $k$ have been search.
+    - BFS: $d^k$, Bidirectional: $d^{k/2}$ + $d^{k/2}$  
+
+### Tips and Tricks
+
+- Listen For:
+    - Relationships between items. Person/situation/distance A and B.
+- Syntactical details
+    - Implementing graph as adjacency list or adjacency matrix 
+- Patterns & Concepts
+    - BFS, DFS
+- Stumbling Blocks
+    - Cycles
+    - Marking nodes as visited
+- Extras:
+    - Weighted edges
+    - BFS vs DFS vs bidirectional-BFS
+
+
+### Examples
+
+1. A graph has 10 nodes. (Assume there is never an edge between a node and itself.) What is the maximum number of edges it could have?
+
+    - 50 edges if directed. 100 edges if undirected.
+    - 45 edges if directed. 90 edges if undirected.
+    - -> 90 edges if directed, 45 edges if undirected.
+    - 110 edges if directed. 55 edges if undirected
+    - 100 edges if directed; 50 edges if undirected.
+
+    Explaination:
+
+    - Undirected graph: $ E = \frac{n(n-1)}{2} $. This formula comes from the fact that each node n can connect to $n-1$ other nodes, and each connection is counted twice (once for each direction).
+    - Directed graph: $ n=10 : [ E = 10(10-1) = 10 \times 9 = 90 ]$. This formula comes from the fact that each node can have a directed edge to ( n-1 ) other nodes.
+
+2. You are implementing depth-first search recursively on a graph to detect if there’s a path between node A and node B. If this algorithm is called on a directed graph with N nodes and N*(N-1) edges, which expression best describes the max depth of the call stack? (Assume there are no nodes with an edge from the node to itself.)
+
+    - O(1)
+    - O(log N)
+    - O(N^2)
+    - -> O(N)
+
+## Greedy Algorithms
+
+### Questions
+
+1. Consider the following problem: Given a number of cents C and an array of denominations D, produce this change using the fewest number of coins possible. For example, if the denominations are US currency (25, 10, 5, 1), you could make 56 cents with 2 quarters (25 cents), 1 nickel (5 cents) and 1 penny (1 cent). Jennifer proposes a greedy approach where you apply the biggest denomination first, then the second biggest, and so on. Will the greedy approach work?
+
+   - It will not work for any value of D.
+   - It will work for some values of D but not others.
+   - Yes, for all values of D
+
 ## Notes
 
 Recursing on the left and then recursing on the right (similar to an in-order traversal)
