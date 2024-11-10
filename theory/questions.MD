@@ -118,8 +118,15 @@ BUD: Bottlenecks - Unnecessary Work - Duplicated Work
 2. Blindly testing, without thinking about what's happening.
 3. Quick, sloppy fixes.
 
-### Communication
+## Communication
 
+[Link](https://www.metacareers.com/profile/preparation_hub?c=559389189759409&chooseView=Communication) 
+
+
+- Drive through the problem
+- Show your thought process
+- Ask questions
+- Propose initial solution, but also think about its issues
 
 
 ## Hash Tables
@@ -187,8 +194,6 @@ You know what binary search is.
     - --> None of the above.
 
 ## Sorting
-
-
 
 
 [Link](https://www.metacareers.com/profile/preparation_hub?c=559389189759409&chooseView=Sorting)
