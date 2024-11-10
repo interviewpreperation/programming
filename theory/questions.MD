@@ -91,6 +91,37 @@ BUD: Bottlenecks - Unnecessary Work - Duplicated Work
 - Ignore things that don't show good signal (but check with your interviewer first)
 - Focus on what shows signal
 
+## Verification
+
+- Your original example is generally not a good test case
+- Good examples are large, and large test cases take a very long time to run through.
+
+### Tips and Tricks
+
+1. Conceptual walk though to your interviewer.
+2. Hot spots. Where the high risk lines of code?
+    - Math
+    - Moving indices
+    - Parameters when calling recursion
+    - Base cases
+    - and so on!
+3. Test cases: 
+    - Start with small cases.
+    - Edge cases: 
+        - boring edge cases
+        - interesting edge cases
+    - Big test cases (if you have time)
+    
+### Common Mistakes
+
+1. Verifying algorithm, not code.
+2. Blindly testing, without thinking about what's happening.
+3. Quick, sloppy fixes.
+
+### Communication
+
+
+
 ## Hash Tables
 
 [Links](https://www.metacareers.com/profile/preparation_hub?c=559389189759409&chooseView=Hash+Tables)
