@@ -395,9 +395,9 @@ Label
 - Binary Search Tree
 
 #### Traversal
-- in-order: go(left), visit(me), go(right) --> if BST visits the nodes in order 
-- pre-order: visit(me), go(left), go(right) --> visits the nodes before recursion
-- post_order: go(left), go(right), visit(me) --> visits the nodes after recursion
+- in-order: go(left), visit(me), go(right)   --> if BST visits the nodes in order
+- pre-order: visit(me), go(left), go(right)  --> visits the nodes before recursion
+- post-order: go(left), go(right), visit(me) --> visits the nodes after recursion
 
 ### Trie 
 - E.g. Sudoku - Word Search Problem
@@ -566,3 +566,7 @@ Label
 ## Notes
 
 Recursing on the left and then recursing on the right (similar to an in-order traversal)
+
+
+### Difference Hashset vs Hashmap
+
