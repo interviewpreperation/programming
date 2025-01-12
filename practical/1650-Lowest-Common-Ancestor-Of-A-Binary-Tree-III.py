@@ -14,10 +14,18 @@ class Node:
 
 def lowestCommonAncestor(self, p: Node, q: Node) -> Node:
     # https://www.youtube.com/watch?v=vZxxksAP8yk
-    
-    pass
+    p_copy = p
+    q_copy = q
 
+    while p_copy != q_ccopy:
+        q_copy = q_copy.parent if q_copy else p 
+        p_copy = p_copy.parent if p_copy else q
+
+        return p_copy
 
 
  res = lowestCommonAncestor(p: Node, q: Node)
-print(res.val)
+print(res.val)]
+
+# T: O(n)
+# S: O(1)
