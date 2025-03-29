@@ -2,6 +2,7 @@
 
 
 # https://algo.monster/liteproblems/708
+# cracking faang: https://www.youtube.com/watch?v=XN9OsmP2YTk
 
 
 class Node:
