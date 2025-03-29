@@ -2,7 +2,7 @@
 
 
 # https://algo.monster/liteproblems/708
-# cracking faang: https://www.youtube.com/watch?v=XN9OsmP2YTk
+
 
 
 class Node:
@@ -44,3 +44,46 @@ class Solution:
 
         # Return the head of the modified linked list
         return head
+
+###################################################################
+# cracking faang: https://www.youtube.com/watch?v=XN9OsmP2YTk
+# 1. head is null
+# 2. insert into LL
+# 3. edge insert
+# 4. unival LL
+
+class Solution:
+    def insert(self, head: 'Optional[Node]', insert_value: int) -> 'Node':
+        # case 1
+        if not head:
+            new_head = Node(insertVal)
+            new_head.next = new_head
+            return new_head
+
+        cur = head
+
+        while cur.next != head
+            # case 2
+            if cur.val <= insertVal <= cur.next.Val:
+                new_node = Node(insertVal, cur.next)
+                cur.next = new_node
+                
+                return head
+
+            # case 3
+            elif cur.val > cur.next.val:
+                if insertVal >= cur.val or insertVal <= cur.next.val:
+                    new_node = Node(insertVal, cur.next)
+                    cur.next = new_node
+
+                    return head
+            cur = cur.next
+        
+        # case 4
+        new_node = Node(insertVal, cur.next)
+        cur.next = new_node
+
+        return head
+
+# T: O(n) ... n is size of LL
+# S: O(1)
