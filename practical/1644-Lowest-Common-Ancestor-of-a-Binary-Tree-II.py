@@ -1,4 +1,9 @@
-# https://algo.monster/liteproblems/1644
+# # https://algo.monster/liteproblems/1644
+# Key Differences Between LeetCode #236 and #1644
+# Feature	LeetCode #236 (Standard LCA)	LeetCode #1644 (LCA II)
+# Input Guarantee	Both p and q exist in the tree	p or q might not exist
+# Return Requirement	Always return LCA if found	Return None if either p or q is missing
+
 
 # Definition for a binary tree node.
 class TreeNode:
