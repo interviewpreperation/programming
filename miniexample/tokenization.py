@@ -97,8 +97,40 @@ if __name__ == "__main__":
     print("\nRegex word tokenizer:")
     regex_tokenizer = Tokenizer(split_on_whitespace=False)
     print(regex_tokenizer.tokenize(sample_text))
-    
+
     # Building a vocabulary
     print("\nVocabulary:")
     vocab = no_punct_tokenizer.get_vocabulary(sample_text)
     print(vocab)
+
+
+'''
+Key Features Demonstrated:
+Configurable Tokenization: The class can be configured for different tokenization needs (case sensitivity, punctuation handling, etc.)
+
+Multiple Tokenization Methods: Supports both whitespace splitting and regex-based tokenization
+
+Vocabulary Building: Includes a method to build a frequency vocabulary from texts
+
+Clean Code Structure: Well-organized with helper methods and clear documentation
+
+Type Hints: Uses Python type hints for better code clarity
+
+Edge Case Handling: Properly handles empty input and other edge cases
+
+Example Usage: Demonstrates how to use the class with different configurations
+
+During an interview, you could walk through:
+
+The design decisions
+
+Trade-offs between different tokenization approaches
+
+How you might extend this (e.g., adding stemming/lemmatization)
+
+Performance considerations
+
+Unicode handling (which this basic version doesn't fully address)
+'''
+    
+
