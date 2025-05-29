@@ -205,3 +205,60 @@ Tree-based models (XGBoost, Random Forest): Frequency or target encoding.
 Linear models (Logistic Regression): Target encoding (with smoothing).
 Neural Networks: Embeddings or hash encoding.
 Low-memory environments: Hash encoding.
+
+
+Key Considerations
+Avoid one-hot encoding (creates thousands of columns).
+Monitor for overfitting (especially with target encoding).
+Benchmark multiple methods on validation data.
+
+
+How do you manage an unbalanced data set?
+answered
+What is lstm? Why use lstm? How was lstm used in your experience?
+
+
+What did you use to remove multicollinearity? Explain what values of VIF you used.
+Explain different time series analysis models. What are some time series models other than Arima?
+How does a neural network with one layer and one input and output compare to a logistic regression?
+How do you evaluate Gen AI models?
+Explain overfitting, When does it happen? How can you avoid it?
+How do you handle overfitting and underfitting in machine learning models?
+What is random forest, and what is C5?
+Random Forest is an ensemble method that combines the predictions of multiple decision trees to improve accuracy, while C5.0 is a single decision tree algorithm that focuses on building a refined and accurate model
+What would a neural network without an activation function look like?
+Simple linear regression model
+How do you perform anomaly detection?
+Anomaly detection identifies unusual patterns or data points that deviate significantly from expected behavior or normal patterns in a dataset. This can be achieved through various methods, including statistical techniques, machine learning algorithms, and visual inspection.
+Describe a scenario where collecting more data may not be useful.
+Explain the difference between grid search cv and random search cv.
+https://aman.ai/primers/ai/hyperparameter-tuning
+In the paper Random Search for Hyper-Parameter Optimization by Bergstra and Bengio, the authors show empirically and theoretically that random search is more efficient for parameter optimization than grid search. 
+If there is a defective/unsafe product on Amazon, how would you identify it?
+Explain transformer architecture.
+Build a RAG system. (Book AI Systems 256)
+https://aws.amazon.com/what-is/retrieval-augmented-generation 
+https://huggingface.co/blog/ngxson/make-your-own-rag 
+https://skphd.medium.com/rag-system-design-interview-questions-and-answers-6c0b2865062e  
+RAG is a technique that enhances a model’s generation by retrieving the relevant information form external memory sources. An external memory source can be an internal database, a user’s chat sessions, or the internet.
+With RAG, only the information most relevant to the query, as determined by the retriever, is retrieved and input into the model. Lewis et al. found that having access to the relevant information can help the model generate more detailed responses while reducing hallucinations. (Meta paper Petroni et al.)
+Trade-off: reduces input tokens vs model performance
+Describe the differences between Adam vs SGD.
+Discuss implementation and fine-tuning of transformer architectures for personalized content or conversational AI, e.g., pretraining on domain-specific datasets for Alexa Skills.
+Amazon data scientist interview questions: statistics
+What is p-value?
+What is the maximum likelihood of getting k heads when you tossed a coin n times? Write down the mathematics behind it.
+There are 4 red balls and 2 blue balls, what's the probability of them not being the same in the 2 picks?
+How would you explain hypothesis testing for a newbie?
+What is cross-validation?
+How do you interpret OLS regression results?
+Explain confidence intervals.
+Name the five assumptions of linear regression.
+Estimate the disease probability in one city, given the probability is very low nationwide. Randomly asked 1000 people in this city, with all negative responses (NO disease). What is the probability of disease in this city?
+What is the difference between linear regression and a t-test? 
+Explain Bayes' Theorem.
+What is bootstrapping?
+How do you inspect missing data, and when are they important?
+What are the underlying assumptions of linear regression, and what are their implications for model performance?
+You are asked to reduce delivery delays in a specific geography. How would you apply statistical analysis and machine learning to identify root causes?
+
