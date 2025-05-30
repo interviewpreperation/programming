@@ -1,5 +1,11 @@
 # Amazon Breadth and Depth
 
+## Important Literure
+
+ - [DL questions](https://github.com/youssefHosni/Data-Science-Interview-Questions-Answers/blob/main/Deep%20Learning%20Questions%20%26%20Answers%20for%20Data%20Scientists.md)
+ - [ML questions](https://github.com/youssefHosni/Data-Science-Interview-Questions-Answers/blob/main/Machine%20Learning%20Interview%20Questions%20%26%20Answers%20for%20Data%20Scientists.md)
+
+
 ## Postion I apply for
 
 https://www.amazon.jobs/en/jobs/2947006/applied-scientist-ii-artificial-general-intelligence 
@@ -10,6 +16,15 @@ https://www.amazon.jobs/en/jobs/2947006/applied-scientist-ii-artificial-general-
 - Highly effective verbal and written communication skills with both non-technical and technical audiences.
 - Experience with conducting applied research in a corporate setting.
 - Experience in building deep learning models for business applications.
+
+Explain:
+ - MxNet
+ - Spark MLLib
+ - CNN
+ - RNN
+ - GANs
+ - VAE
+ - Transformers
 
 PEFT
 https://aman.ai/primers/ai/parameter-efficient-fine-tuning 
@@ -127,12 +142,16 @@ Image and Computer Vision
 - CNN
 - YOLO
 
+
+## Other questions 
 ### How do you interpret logistic regression?
 Logistic regression interprets the relationship between predictor variables and the probability of a binary outcome. It does this by modeling the relationship as a log-odds (log of the odds of success). This log-odds is then transformed back to a probability using the sigmoid function, which outputs a value between 0 and 1.
-How does dropout work?
+
+### How does dropout work?
 Randomly setting a fraction of neurons to zero during training. 
 Forces the remaining neurons to learn more robust and generalized features, as they are no longer reliant on specific co-adapted neurons.
-What is L1 vs. L2 regularization?
+
+### What is L1 vs. L2 regularization?
 L1 (lasso) → sparsity 
 L2 (ridge) → smaller non-zero coefficients
 What is the difference between bagging and boosting?
@@ -141,8 +160,7 @@ https://medium.com/@abhishekjainindore24/understanding-the-1d-convolutional-laye
 https://imperialcollegelondon.github.io/ReCoDE-AIForPatents/5_Convolutional_1D_Network_Classification
 Describe a case where you have solved an ambiguous business problem using machine learning.
 
-
-Having a categorical variable with thousands of distinct values, how would you encode it?
+### Having a categorical variable with thousands of distinct values, how would you encode it?
 When dealing with a categorical variable with thousands of distinct values (e.g., ZIP codes, product IDs, user IDs), standard encoding methods like one-hot encoding become impractical. Here are effective strategies, ranked by typical preference:
 1. Target Encoding (Mean Encoding)
 What: Replace each category with the mean of the target variable for that category (e.g., average purchase price per user ID).
@@ -195,59 +213,63 @@ Low-memory environments: Hash encoding.
 
 
 Key Considerations
-Avoid one-hot encoding (creates thousands of columns).
-Monitor for overfitting (especially with target encoding).
-Benchmark multiple methods on validation data.
+- Avoid one-hot encoding (creates thousands of columns).
+- Monitor for overfitting (especially with target encoding).
+- Benchmark multiple methods on validation data.
 
 
-How do you manage an unbalanced data set?
+### How do you manage an unbalanced data set?
 answered
-What is lstm? Why use lstm? How was lstm used in your experience?
+
+### What is lstm? Why use lstm? How was lstm used in your experience?
 
 
-What did you use to remove multicollinearity? Explain what values of VIF you used.
-Explain different time series analysis models. What are some time series models other than Arima?
-How does a neural network with one layer and one input and output compare to a logistic regression?
-How do you evaluate Gen AI models?
-Explain overfitting, When does it happen? How can you avoid it?
-How do you handle overfitting and underfitting in machine learning models?
-What is random forest, and what is C5?
-Random Forest is an ensemble method that combines the predictions of multiple decision trees to improve accuracy, while C5.0 is a single decision tree algorithm that focuses on building a refined and accurate model
-What would a neural network without an activation function look like?
-Simple linear regression model
-How do you perform anomaly detection?
-Anomaly detection identifies unusual patterns or data points that deviate significantly from expected behavior or normal patterns in a dataset. This can be achieved through various methods, including statistical techniques, machine learning algorithms, and visual inspection.
-Describe a scenario where collecting more data may not be useful.
-Explain the difference between grid search cv and random search cv.
+### What did you use to remove multicollinearity? Explain what values of VIF you used.
+### Explain different time series analysis models. What are some time series models  other than Arima?
+### How does a neural network with one layer and one input and output compare to a  logistic regression?
+### How do you evaluate Gen AI models?
+### Explain overfitting, When does it happen? How can you avoid it?
+### How do you handle overfitting and underfitting in machine learning models?
+### What is random forest, and what is C5?
+### Random Forest is an ensemble method that combines the predictions of multiple decision trees to improve accuracy, while C5.0 is a single decision tree algorithm that focuses on building a refined and accurate model
+### What would a neural network without an activation function look like?
+### Simple linear regression model
+### How do you perform anomaly detection?
+### Anomaly detection identifies unusual patterns or data points that deviate significantly from expected behavior or normal patterns in a dataset. This can be ### achieved through various methods, including statistical techniques, machine learning algorithms, and visual inspection.
+### Describe a scenario where collecting more data may not be useful.
+### Explain the difference between grid search cv and random search cv.
 https://aman.ai/primers/ai/hyperparameter-tuning
 In the paper Random Search for Hyper-Parameter Optimization by Bergstra and Bengio, the authors show empirically and theoretically that random search is more efficient for parameter optimization than grid search. 
 If there is a defective/unsafe product on Amazon, how would you identify it?
 Explain transformer architecture.
-Build a RAG system. (Book AI Systems 256)
+###  Build a RAG system. (Book AI Systems 256)
 https://aws.amazon.com/what-is/retrieval-augmented-generation 
 https://huggingface.co/blog/ngxson/make-your-own-rag 
 https://skphd.medium.com/rag-system-design-interview-questions-and-answers-6c0b2865062e  
 RAG is a technique that enhances a model’s generation by retrieving the relevant information form external memory sources. An external memory source can be an internal database, a user’s chat sessions, or the internet.
 With RAG, only the information most relevant to the query, as determined by the retriever, is retrieved and input into the model. Lewis et al. found that having access to the relevant information can help the model generate more detailed responses while reducing hallucinations. (Meta paper Petroni et al.)
-Trade-off: reduces input tokens vs model performance
-Describe the differences between Adam vs SGD.
-Discuss implementation and fine-tuning of transformer architectures for personalized content or conversational AI, e.g., pretraining on domain-specific datasets for Alexa Skills.
-Amazon data scientist interview questions: statistics
-What is p-value?
-What is the maximum likelihood of getting k heads when you tossed a coin n times? Write down the mathematics behind it.
-There are 4 red balls and 2 blue balls, what's the probability of them not being the same in the 2 picks?
-How would you explain hypothesis testing for a newbie?
-What is cross-validation?
-How do you interpret OLS regression results?
-Explain confidence intervals.
-Name the five assumptions of linear regression.
-Estimate the disease probability in one city, given the probability is very low nationwide. Randomly asked 1000 people in this city, with all negative responses (NO disease). What is the probability of disease in this city?
-What is the difference between linear regression and a t-test? 
-Explain Bayes' Theorem.
-What is bootstrapping?
-How do you inspect missing data, and when are they important?
-What are the underlying assumptions of linear regression, and what are their implications for model performance?
-You are asked to reduce delivery delays in a specific geography. How would you apply statistical analysis and machine learning to identify root causes?
+
+### Trade-off: reduces input tokens vs model performance
+### Describe the differences between Adam vs SGD.
+### Discuss implementation and fine-tuning of transformer architectures for personalized content or conversational AI, e.g., pretraining on domain-specific datasets for Alexa Skills.
+
+
+## Amazon data scientist interview questions: statistics
+### What is p-value?
+### What is the maximum likelihood of getting k heads when you tossed a coin n times?  Write down the mathematics behind it.
+### There are 4 red balls and 2 blue balls, what's the probability of them not being the same in the 2 picks?
+### How would you explain hypothesis testing for a newbie?
+### What is cross-validation?
+### How do you interpret OLS regression results?
+### Explain confidence intervals.
+### Name the five assumptions of linear regression.
+### Estimate the disease probability in one city, given the probability is very low  nationwide. Randomly asked 1000 people in this city, with all negative responses (NO disease). What is the probability of disease in this city?
+### What is the difference between linear regression and a t-test? 
+### Explain Bayes' Theorem.
+### What is bootstrapping?
+### How do you inspect missing data, and when are they important?
+### What are the underlying assumptions of linear regression, and what are their ### implications for model performance?
+### You are asked to reduce delivery delays in a specific geography. How would you apply statistical analysis and machine learning to identify root causes?
 
 
 
@@ -264,8 +286,7 @@ https://levelup.gitconnected.com/top-large-language-models-llms-interview-questi
 Most important: https://www.teamrora.com/the-2024-technical-interview-guide-for-ai-researchers 
 
 
-DL: https://github.com/youssefHosni/Data-Science-Interview-Questions-Answers/blob/main/Deep%20Learning%20Questions%20%26%20Answers%20for%20Data%20Scientists.md
-ML: https://github.com/youssefHosni/Data-Science-Interview-Questions-Answers/blob/main/Machine%20Learning%20Interview%20Questions%20%26%20Answers%20for%20Data%20Scientists.md
+
 
 https://www.youtube.com/watch?v=mXki_lLKogM 
 https://www.youtube.com/watch?v=NUlLDY16QZU
