@@ -1,19 +1,6 @@
 # Amazon Breadth and Depth
 
-Most important: https://www.teamrora.com/the-2024-technical-interview-guide-for-ai-researchers 
-ML coding: https://github.com/alirezadir/Machine-Learning-Interviews/blob/main/src/MLC/notebooks/k_means_2.ipynb 
-DL: https://github.com/youssefHosni/Data-Science-Interview-Questions-Answers/blob/main/Deep%20Learning%20Questions%20%26%20Answers%20for%20Data%20Scientists.md
-ML: https://github.com/youssefHosni/Data-Science-Interview-Questions-Answers/blob/main/Machine%20Learning%20Interview%20Questions%20%26%20Answers%20for%20Data%20Scientists.md
-
-https://www.youtube.com/watch?v=mXki_lLKogM 
-https://www.youtube.com/watch?v=NUlLDY16QZU
-https://www.amazon.sg/Generative-AI-System-Design-Interview/dp/1736049143
-https://www.telusdigital.com/insights/ai-data/article/fine-tuning-llms
-https://www.kdnuggets.com/rag-vs-finetuning-which-is-the-best-tool-to-boost-your-llm-application
-
-https://www.amazon.jobs/en/jobs/2947006/applied-scientist-ii-artificial-general-intelligence
-https://www.tryexponent.com/questions?company=amazon&type=machine-learning 
-https://www.interviewquery.com/interview-guides/amazon-machine-learning-engineer 
+## Postion I apply for
 
 https://www.amazon.jobs/en/jobs/2947006/applied-scientist-ii-artificial-general-intelligence 
 - Experience with popular deep learning modelling tools and workflows such as MxNet, TensorFlow, R, scikit-learn, Spark MLLib, numpy, and SciPy.
@@ -262,3 +249,26 @@ How do you inspect missing data, and when are they important?
 What are the underlying assumptions of linear regression, and what are their implications for model performance?
 You are asked to reduce delivery delays in a specific geography. How would you apply statistical analysis and machine learning to identify root causes?
 
+## References
+
+
+
+https://levelup.gitconnected.com/top-computer-vision-interview-questions-answers-part-3-1e43909131b2 I am not sure if this is too specific. 
+
+https://levelup.gitconnected.com/top-large-language-models-llms-interview-questions-answers-d7b83f94c4e This one gives a good overview for NLP and LLM  I think.
+
+
+Most important: https://www.teamrora.com/the-2024-technical-interview-guide-for-ai-researchers 
+ML coding: https://github.com/alirezadir/Machine-Learning-Interviews/blob/main/src/MLC/notebooks/k_means_2.ipynb 
+DL: https://github.com/youssefHosni/Data-Science-Interview-Questions-Answers/blob/main/Deep%20Learning%20Questions%20%26%20Answers%20for%20Data%20Scientists.md
+ML: https://github.com/youssefHosni/Data-Science-Interview-Questions-Answers/blob/main/Machine%20Learning%20Interview%20Questions%20%26%20Answers%20for%20Data%20Scientists.md
+
+https://www.youtube.com/watch?v=mXki_lLKogM 
+https://www.youtube.com/watch?v=NUlLDY16QZU
+https://www.amazon.sg/Generative-AI-System-Design-Interview/dp/1736049143
+https://www.telusdigital.com/insights/ai-data/article/fine-tuning-llms
+https://www.kdnuggets.com/rag-vs-finetuning-which-is-the-best-tool-to-boost-your-llm-application
+
+https://www.amazon.jobs/en/jobs/2947006/applied-scientist-ii-artificial-general-intelligence
+https://www.tryexponent.com/questions?company=amazon&type=machine-learning 
+https://www.interviewquery.com/interview-guides/amazon-machine-learning-engineer 
