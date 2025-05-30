@@ -4,6 +4,7 @@
 
  - [DL questions](https://github.com/youssefHosni/Data-Science-Interview-Questions-Answers/blob/main/Deep%20Learning%20Questions%20%26%20Answers%20for%20Data%20Scientists.md)
  - [ML questions](https://github.com/youssefHosni/Data-Science-Interview-Questions-Answers/blob/main/Machine%20Learning%20Interview%20Questions%20%26%20Answers%20for%20Data%20Scientists.md)
+ - [Aman's AI Journal - Interview questions](https://aman.ai/primers/ai/interview)
 
 
 ## Postion I apply for
@@ -18,8 +19,12 @@ https://www.amazon.jobs/en/jobs/2947006/applied-scientist-ii-artificial-general-
 - Experience in building deep learning models for business applications.
 
 Explain:
- - MxNet
- - Spark MLLib
+ - [MxNet](https://aws.amazon.com/mxnet)
+    - Deep learning workloads can be distributed across multiple GPUs with near-linear scalability, which means that extremely large projects can be handled in less time.
+    - As of [September 2023](https://en.wikipedia.org/wiki/Apache_MXNet), it is no longer actively developed.
+ - [Spark MLLib](https://aws.amazon.com/what-is/apache-spark/)
+    - Machine Learning models can be trained by data scientists with R or Python on any Hadoop data source, saved using MLlib.
+    - The algorithms include the ability to do classification, regression, clustering, collaborative filtering, and pattern mining.
  - CNN
  - RNN
  - GANs
@@ -33,8 +38,10 @@ https://aman.ai/primers/ai/parameter-efficient-fine-tuning
 ## Training and Optimization
 - Adaptive gradient approaches, Regularization and overfitting, loss functions
 - Bayesian v/s maximum likelihood estimation,
- dealing with class imbalance, K-fold cross validation, bias, and variance 
-## Evaluation metrics:  https://aman.ai/primers/ai/evaluation-metrics/ 
+ dealing with class imbalance, K-fold cross validation, bias, and variance
+
+ 
+## [Evaluation metrics](https://aman.ai/primers/ai/evaluation-metrics/)  
 - Accuracy
 - Precision, Recall
 - Area under ROC
@@ -109,7 +116,7 @@ https://aman.ai/primers/ai/parameter-efficient-fine-tuning
 - Q-learning, and 
 - Deep Q-Networks (DQNs)
 - Applied to domains such as retail, Speech, NLP, Vision, robotics, etc. 
-https://vgel.me/posts/handmade-transformer 
+
 https://rlhfbook.com
 
 ## Deep Neural Networks / Deep Learning 
