@@ -1,5 +1,6 @@
 # Progress
 
+## Todo
  - Coding:
     - Leetcode: two samples per day
     - Mini examples
@@ -13,6 +14,11 @@
     - [Blog: Hello Interview’s Learn System Design in a Hurry Guide](https://www.hellointerview.com/learn/system-design/in-a-hurry/introduction)
     - [Book: Alex Xu’s “System Design Interview - An Insider’s Guide”](https://www.amazon.com/System-Design-Interview-insiders-Second/dp/B08CMF2CQF)
 
+
+## Inteview Guide
+
+- [Common Questions](https://www.tryexponent.com/questions?company=amazon&type=machine-learning)
+- [Amazon MLE ](https://www.interviewquery.com/interview-guides/amazon-machine-learning-engineer) 
 
 ## Refernces
 
