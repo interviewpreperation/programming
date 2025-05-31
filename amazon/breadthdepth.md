@@ -29,7 +29,9 @@ Explain:
  - RNN
  - GANs
  - VAE
- - Transformers
+ - Transformers: 
+      - Coded my own example. 
+
 
 PEFT
 https://aman.ai/primers/ai/parameter-efficient-fine-tuning 
@@ -53,93 +55,110 @@ https://aman.ai/primers/ai/parameter-efficient-fine-tuning
 - A/B testing fundamentals: https://www.youtube.com/watch?v=2sWVLMVQsu0 
 
 ## Supervised Learning
-- Linear & Logistic regression
-- Naive Bayes classifier
-- Bagging & Boosting
-- K-nearest neighbors
-- Trees
-- Neural Networks
-- Support Vector Machines 
-- Random Forests, 
-- Gradient Boosted trees, kernel methods, 
-- Stochastic Gradient Descent (SGD), 
-- Sequence Modeling, 
-- Bayesian linear regression, 
-- Gaussian Processes, 
-- Concepts of overfitting and underfitting, Regularization and evaluation metrics for classification and regression problems
+#### Linear & Logistic regression
+#### [Naive Bayes classifier](https://en.wikipedia.org/wiki/Naive_Bayes_classifier#:~:text=Naive%20Bayes%20classifiers%20are%20a,commonly%20used%20in%20text%20classification.)
+
+Naive (sometimes simple or idiot's) Bayes classifiers are family of probalisitic classifiers.
+
+  - (-) perform wors than advanced models like logistic regressions. Especially at quantifying uncertainty (with naive Bayes models often producing wildly overconfident probabilities)
+  + (+) highly scalable: one parameter for each feature to learn a problem.
+
+
+#### Bagging & Boosting
+#### K-nearest neighbors
+#### Trees
+#### Neural Networks
+#### Support Vector Machines 
+#### Random Forests, 
+#### Gradient Boosted trees, 
+#### kernel methods, 
+
+
+
+#### Stochastic Gradient Descent (SGD), 
+#### Sequence Modeling, 
+#### Bayesian linear regression, 
+#### Gaussian Processes, 
+#### Concepts of overfitting and underfitting, Regularization and evaluation metrics for classification and regression problems
 
 ## Unsupervised Learning
 ### Clustering algorithms, 
-- k-Means clustering, 
-- Anomaly detection, 
-- Markov methods, 
-- DBSCAN, 
-- Self-organizing maps, 
-- Deep Belief Nets, 
-- Expectation Maximization (EM), 
-- Gaussian Mixture Models (GMM) and 
-- Evaluation metrics for clustering problems 
+#### k-Means clustering, 
+#### Anomaly detection, 
+#### Markov methods, 
+#### DBSCAN, 
+#### Self-organizing maps, 
+#### Deep Belief Nets, 
+#### Expectation Maximization (EM), 
+#### Gaussian Mixture Models (GMM) and 
+#### Evaluation metrics for clustering problems 
 
 ### Probabilistic graphical models
-- Bayesian Network, 
-- Markov Networks, 
-- Variational inference, 
-- Markov chain, 
-- Monte Carlo methods, 
-- Latent Dirichlet Allocation (LDA), 
-- Inference methods such as Belief Propagation, 
-- Gibbs Sampling 
+#### Bayesian Network, 
+#### Markov Networks, 
+#### Variational inference, 
+#### Markov chain, 
+#### Monte Carlo methods, 
+#### Latent Dirichlet Allocation (LDA), 
+#### Inference methods such as Belief Propagation, 
+#### Gibbs Sampling 
 
 ### Dimensionality reduction
-- Auto encoders, 
-- t-SNE, 
-- Principal Component Analysis (PCA), 
-- Singular Value Decomposition (SVD), 
-- Spectral Clustering and 
-- Matrix Factorization 
+#### Auto encoders, 
+#### t-SNE, 
+#### Principal Component Analysis (PCA), 
+#### Singular Value Decomposition (SVD), 
+#### Spectral Clustering and 
+#### Matrix Factorization 
 
 
 ## Sequential models
-- Hidden Markov model (HMM), 
-- Conditional random fields (CRF), 
-- Recurrent Neural Network (RNN), 
-- Natural Language processing applications such as Named Entity Recognition (NER) and 
-- Parts of Speech (POS) tagging 
+#### Hidden Markov model (HMM)
 
-## Reinforcement Learning
-- State–action–reward–state–action (SARSA), 
-- explore-exploit techniques, 
-- multi-armed bandits 
-- epsilon greed
-- UCB, 
-- Thompson Sampling
-- Q-learning, and 
-- Deep Q-Networks (DQNs)
-- Applied to domains such as retail, Speech, NLP, Vision, robotics, etc. 
+#### Conditional random fields (CRF)
 
-https://rlhfbook.com
+#### [Recurrent Neural Network (RNN)](https://aws.amazon.com/what-is/recurrent-neural-network/)
+
+
+#### Natural Language processing applications such as Named Entity Recognition (NER) and 
+
+
+#### Parts of Speech (POS) tagging 
+
+## [Reinforcement Learning](https://rlhfbook.com)
+#### State–action–reward–state–action (SARSA), 
+#### explore-exploit techniques, 
+#### multi-armed bandits 
+#### epsilon greed
+#### UCB, 
+#### Thompson Sampling
+#### Q-learning, and 
+#### Deep Q-Networks (DQNs)
+#### Applied to domains such as retail, Speech, NLP, Vision, robotics, etc. 
 
 ## Deep Neural Networks / Deep Learning 
-- Feed forward Neural Networks 
-- Convolutional Neural Networks 
-- Backpropagation
-- Recurrent Neural Networks (RNNs)
-- Long Short Term Memory (LSTM) networks 
-- GAN
-- Attention
-- Dropout
-- Vanishing gradient
-- Activation Functions 
+#### Feed forward Neural Networks 
+#### Convolutional Neural Networks 
+#### Backpropagation
+
+
+#### Recurrent Neural Networks (RNNs)
+#### Long Short Term Memory (LSTM) networks 
+#### GAN
+#### Attention
+#### Dropout
+#### Vanishing gradient
+#### Activation Functions 
 
 ## Natural Language Processing
-- Statistical Language Modelling
-- Latent Dirichlet allocation (LDA)
-- Named Entity Recognition (NER)
-- Word Embedding
-- Word2Vec
-- Sentiment Analysis
-- BERT
-- ULMFiT 
+#### Statistical Language Modelling
+#### Latent Dirichlet allocation (LDA)
+#### Named Entity Recognition (NER)
+#### Word Embedding
+#### Word2Vec
+#### Sentiment Analysis
+#### BERT
+#### ULMFiT 
 
 Image and Computer Vision 
 - Object Detection
