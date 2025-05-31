@@ -137,6 +137,7 @@ Naive (sometimes simple or idiot's) Bayes classifiers are family of probalisitic
 #### Applied to domains such as retail, Speech, NLP, Vision, robotics, etc. 
 
 ## Deep Neural Networks / Deep Learning 
+
 #### Feed forward Neural Networks 
 #### Convolutional Neural Networks 
 #### Backpropagation
